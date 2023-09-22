@@ -1,9 +1,9 @@
 # Optionally glob, but only for CMake 3.12 or later:
 
 file(GLOB HEADER_LIST CONFIGURE_DEPENDS "${ModernCMakeExample_SOURCE_DIR}/include/lmvs/*.h")
-#set(HEADER_LIST "${LMVS_MOCK_SOURCE_DIR}/include/lmvs/math.h")
+#set(HEADER_LIST "${LMVS_CPP_SOURCE_DIR}/include/lmvs/math.h")
 
-file(GLOB SOURCE_LIST CONFIGURE_DEPENDS "${LMVS_MOCK_SOURCE_DIR}/src/*.cpp")
+file(GLOB SOURCE_LIST CONFIGURE_DEPENDS "${LMVS_CPP_SOURCE_DIR}/src/*.cpp")
 
 # Make an automatic library - will be static or dynamic based on user setting
 add_library(lmvs ${SOURCE_LIST} ${HEADER_LIST})

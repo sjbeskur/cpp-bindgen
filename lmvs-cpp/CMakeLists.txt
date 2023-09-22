@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.4.0)
 project(
-        LMVS_MOCK 
+        LMVS_CPP 
         VERSION 1.0.0
         DESCRIPTION "An example project with CMake"
         LANGUAGES CXX )
@@ -15,7 +15,7 @@ install(FILES
     DESTINATION 
     ${CMAKE_INSTALL_PREFIX}/include/lmvs 
 )
-install(TARGETS lmvs EXPORT lmvs DESTINATION ${CMAKE_INSTALL_PREFIX})
+install(TARGETS lmvs EXPORT lmvs DESTINATION ${CMAKE_INSTALL_PREFIX}/lib/lmvs)
 
 #install(EXPORT lmvs FILE math-config.cmake  DESTINATION ${CMAKE_INSTALL_PREFIX}/lib/lmvs)
 
